@@ -1,0 +1,42 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: amd64
+Codename: stable
+Components: main
+Date: Sat, 07 Feb 2026 13:19:51 +0000
+Label: HashVault
+Origin: HashVault
+Suite: stable
+MD5Sum:
+ 15ff64ed41cb45bd2b7f9f0d294a8f70              142 Release
+ a41e9762b926e19649c053528ac26633              603 main/binary-amd64/Packages
+ 4a4be1585fe940364c5ac4f30724e9f6              447 main/binary-amd64/Packages.gz
+SHA1:
+ 45fa147ea4933bd495ebcbe6ff3ec631ed2e55b0              142 Release
+ a2e14629e892d46ac7c4a66548b4b6ac598949ef              603 main/binary-amd64/Packages
+ 5032360669a64556a116fad6607746b61ff54d2b              447 main/binary-amd64/Packages.gz
+SHA256:
+ 4c28df4de2925653ce838bf85e7487eabd41b66dbccc95e1d3985a29e321eeea              142 Release
+ bad55a2bff43abed3e88e737386ecd8da7ef950f0e8f359f443451239bc87bb6              603 main/binary-amd64/Packages
+ 3b7904ad443e0201145a825e1f7a00f9a9278f44a2282ef3226d59915c08b11b              447 main/binary-amd64/Packages.gz
+SHA512:
+ 637541cc7896be313a836608beaaa47cbcac77dd84448b9a7dc78c548306bcfa4cae4a5723dd0ed98f2c1522de34ad2bc6db2e2875c67c1e6e93269b9600561c              142 Release
+ 6c66d6f7c90c496b858a77b5c4f7e69b84e1e14373f37337ea172b015c6b34baa16d1cf3dd6d8fbe465b7ca8efe94c0d7c22934020b86d2cb903fa98f71a20fe              603 main/binary-amd64/Packages
+ 9abb53f79855ea537a49c6c1c4e26b6732d729b002b9b2ce230a718b992b2fefafb542cc0b29b3759eab98f0c52e7933fa060a0e71b968ddb17e172ac6a15212              447 main/binary-amd64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEz3x+CdjDX9IFjcv9oHNCg7Jkhi8FAmmHO/gACgkQoHNCg7Jk
+hi93nBAAnAa1pPsJ6UupQOcYjXKWB76L8YLio5sSsW9Uhtgw/AcuhqxEq7ImxHQx
+7ZRqLey0NlDdbY3cj7o9dg7XVQNg/iImjXsldl5E1HGZ/oeIc5ztGod1NrycVmmB
+TvTeCtOCjAKL/TW+pu1vXqxnnBCIRVrY4wNfYGAi6wq9Kk66Ag02Ef6kXYG0Rcrk
+DlG8eaU0Ov+mouq0GMyuJd+F96Se/hhcErWSYuLdzeV/h/nxW2B6E2HLEtdiyxat
+qfgg1C9TggYZREk0TRnfsj0X7fVVgHK6qpaJ0HmFz3KfsdIjgTfW2kYU6sZDMCV5
+7ApApYnC9iMYyGIuHqSYz53gSeIEuZajCyBCBXlrEwdzVnZLbxUHEw4jT9Mk6HDH
+9lAKw79TLNFKpRqvtyubS9B68Ugf33wJ2wrTeqbOoCxnnkC2dxeQO07wwsw++IE9
+DF4vIWHRj+Sf0vC//XTvqkV35kHLZWf26gt7uqOsoGvEsy0ItgNEwAW+64XoKwFz
+M4J4yDElcEQZwYEvnlJEOEuZgyKJY7+lafX5u4NAAMa9ca+ech1qOT6fK04zV8K+
+l++UyDUqHqsGNvc4UIDZ4BZCQFlxHwR2egwbftxzTAdKdCEJHqeht6oRvoBM2gQW
+PopnkvM2wUx1LKpcxrm/oTG7obTBAg09d/y9dK3Lz2Sf+D6NzIk=
+=6g+N
+-----END PGP SIGNATURE-----
