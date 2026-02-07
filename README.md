@@ -22,16 +22,7 @@ sudo apt update && sudo apt install vltrig
 ### DNF (Fedora / RHEL)
 
 ```
-sudo rpm --import https://hashvault.github.io/rpm/KEY.gpg
-sudo tee /etc/yum.repos.d/hashvault.repo << 'EOF'
-[hashvault]
-name=HashVault
-baseurl=https://hashvault.github.io/rpm
-gpgcheck=1
-gpgkey=https://hashvault.github.io/rpm/KEY.gpg
-enabled=1
-EOF
-sudo dnf install vltrig
+sudo rpm --import https://hashvault.github.io/rpm/KEY.gpg && sudo tee /etc/yum.repos.d/hashvault.repo <<< $'[hashvault]\nname=HashVault\nbaseurl=https://hashvault.github.io/rpm\ngpgcheck=1\ngpgkey=https://hashvault.github.io/rpm/KEY.gpg\nenabled=1' && sudo dnf install -y vltrig
 ```
 
 Replace `vltrig` with `vltrig-proxy` to install the proxy instead.
