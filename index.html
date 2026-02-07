@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HashVault Linux Package Repository</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<style>
+:root {
+    --bg-primary: #1e2b35;
+    --bg-secondary: #333d4b;
+    --bg-card: #2b333e;
+    --text-primary: #ededed;
+    --text-secondary: rgba(237, 237, 237, 0.7);
+    --text-muted: rgba(237, 237, 237, 0.5);
+    --accent: #ff6600;
+    --accent-hover: #e55c00;
+    --border: rgba(255, 255, 255, 0.1);
+    --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-mono: 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+* { box-sizing: border-box; }
+body {
+    font-family: var(--font);
+    margin: 0;
+    padding: 40px 20px;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    background-image: url('images/cubes_450.webp');
+    background-repeat: repeat;
+    line-height: 1.6;
+}
+.content {
+    max-width: 1024px;
+    margin: 0 auto;
+    background: rgba(30, 43, 53, 0.92);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    padding: 24px 32px;
+}
+h1 {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+h1 img {
+    height: 36px;
+}
+h1 span {
+    color: var(--accent);
+}
+h2 {
+    margin-top: 32px;
+    color: var(--text-primary);
+}
+p { color: var(--text-secondary); }
+code {
+    background: var(--bg-secondary);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: var(--font-mono);
+    color: var(--accent);
+}
+pre {
+    background: var(--bg-secondary);
+    padding: 16px;
+    border-radius: 6px;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+}
+pre code {
+    background: none;
+    padding: 0;
+    color: var(--text-primary);
+}
+.pre-wrap { position: relative; }
+.copy-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 0.8em;
+    color: var(--text-muted);
+    z-index: 1;
+    transition: background 0.15s, color 0.15s;
+}
+.copy-btn:hover {
+    background: var(--accent);
+    color: #fff;
+}
+a { color: var(--accent); }
+a:hover { color: var(--accent-hover); }
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0;
+}
+th, td {
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    text-align: left;
+}
+th {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+td {
+    color: var(--text-secondary);
+}
+ul { color: var(--text-secondary); }
+li { margin: 4px 0; }
+b { color: var(--text-primary); }
+</style>
+</head>
+<body>
+<div class="content">
+
+<h1><img src="images/logo.webp" alt=""><span>HashVault</span> Linux Package Repository</h1>
+
+<p>This site hosts APT (Debian/Ubuntu) and DNF (Fedora/RHEL) package repositories for HashVault mining software.</p>
+
+<table>
+<tr><th>Package</th><th>Description</th><th>Source</th></tr>
+<tr><td><code>vltrig</code></td><td>High performance RandomX CPU miner</td><td><a href="https://github.com/HashVault/vltrig">GitHub</a></td></tr>
+<tr><td><code>vltrig-proxy</code></td><td>Stratum mining proxy</td><td><a href="https://github.com/HashVault/vltrig-proxy">GitHub</a></td></tr>
+</table>
+
+<h2>Quick install</h2>
+
+<p>One-liner to add the repo and install vltrig:</p>
+
+<p><b>APT (Ubuntu / Debian):</b></p>
+<div class="pre-wrap"><button class="copy-btn" onclick="copyBlock('apt-oneliner')">Copy</button>
+<pre><code id="apt-oneliner">curl -fsSL https://hashvault.github.io/apt/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashvault.gpg && echo "deb [arch=amd64 signed-by=/usr/share/keyrings/hashvault.gpg] https://hashvault.github.io/apt stable main" | sudo tee /etc/apt/sources.list.d/hashvault.list && sudo apt update && sudo apt install -y vltrig</code></pre></div>
+
+<p><b>DNF (Fedora / RHEL):</b></p>
+<div class="pre-wrap"><button class="copy-btn" onclick="copyBlock('dnf-oneliner')">Copy</button>
+<pre><code id="dnf-oneliner">sudo rpm --import https://hashvault.github.io/rpm/KEY.gpg && sudo tee /etc/yum.repos.d/hashvault.repo &lt;&lt;&lt; $'[hashvault]\nname=HashVault\nbaseurl=https://hashvault.github.io/rpm\ngpgcheck=1\ngpgkey=https://hashvault.github.io/rpm/KEY.gpg\nenabled=1' && sudo dnf install -y vltrig</code></pre></div>
+
+<p>Replace <code>vltrig</code> with <code>vltrig-proxy</code> to install the proxy instead.</p>
+
+<h2>APT (Ubuntu / Debian) - step by step</h2>
+
+<pre><code># Add the GPG key
+curl -fsSL https://hashvault.github.io/apt/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashvault.gpg
+
+# Add the repository
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/hashvault.gpg] https://hashvault.github.io/apt stable main" | sudo tee /etc/apt/sources.list.d/hashvault.list
+
+# Install
+sudo apt update
+sudo apt install vltrig          # miner
+sudo apt install vltrig-proxy    # proxy</code></pre>
+
+<h2>DNF (Fedora / RHEL) - step by step</h2>
+
+<pre><code># Import the GPG key
+sudo rpm --import https://hashvault.github.io/rpm/KEY.gpg
+
+# Add the repository
+sudo tee /etc/yum.repos.d/hashvault.repo &lt;&lt; 'EOF'
+[hashvault]
+name=HashVault
+baseurl=https://hashvault.github.io/rpm
+gpgcheck=1
+gpgkey=https://hashvault.github.io/rpm/KEY.gpg
+enabled=1
+EOF
+
+# Install
+sudo dnf install vltrig          # miner
+sudo dnf install vltrig-proxy    # proxy</code></pre>
+
+<h2>Start the service</h2>
+
+<pre><code>sudo systemctl enable --now vltrig        # or vltrig-proxy</code></pre>
+
+<p>Edit the config before starting:</p>
+<ul>
+<li><code>/etc/vltrig/config.json</code> - miner config</li>
+<li><code>/etc/vltrig-proxy/config.json</code> - proxy config</li>
+</ul>
+
+<h2>Update</h2>
+
+<pre><code># APT
+sudo apt update &amp;&amp; sudo apt upgrade
+
+# DNF
+sudo dnf upgrade</code></pre>
+
+<h2>Links</h2>
+
+<ul>
+<li><a href="https://hashvault.pro">HashVault Mining Pool</a></li>
+<li><a href="https://discord.hashvault.pro">Discord</a></li>
+<li><a href="https://github.com/HashVault/vltrig">vltrig on GitHub</a></li>
+<li><a href="https://github.com/HashVault/vltrig-proxy">vltrig-proxy on GitHub</a></li>
+</ul>
+
+</div>
+<script>
+function copyBlock(id) {
+    var el = document.getElementById(id);
+    var text = el.tagName === 'CODE' ? el.textContent : el.querySelector('code').textContent;
+    navigator.clipboard.writeText(text.trim()).then(function() {
+        var btn = el.closest('.pre-wrap').querySelector('.copy-btn');
+        btn.textContent = 'Copied!';
+        setTimeout(function() { btn.textContent = 'Copy'; }, 2000);
+    });
+}
+</script>
+
+</body>
+</html>
