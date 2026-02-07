@@ -4,12 +4,12 @@ Version: 6.25.0.4
 Priority: optional
 Section: utils
 Maintainer: HashVault <root@hashvault.pro>
-Filename: apt/pool/main/vltrig_6.25.0.4_amd64.deb
-Size: 3189150
-MD5sum: 6c93cc0d67290a24804c8bc957a4fb7e
-SHA1: 6000cf2c7cba4c8e295119a3879d36276efcbb02
-SHA256: b857ca5114a00cfc91ed64bb18ed6ec19637965fe3f445e3d84b6a610c8a1dbd
-SHA512: 53ecf5f7b4c58bbb3dcf90278399d6940718f129c189f582e5dcddf57aaacfbc4ab0134c5d5957f3a34a2dfc11bcf705146d73bbf5b1babb60c9f02613205074
+Filename: pool/main/vltrig_6.25.0.4_amd64.deb
+Size: 3189086
+MD5sum: 904ef11fd4d5f5511dc4ce7784261618
+SHA1: b41474b689ab250672923db5d0a5309b7fa92b32
+SHA256: bcf7ac0d582c82e45f723fb28d9e9d5e036927d7b32680915c0ade11e5ea0192
+SHA512: db58b6ae5910cf62c52ed81fd6facb5af5c4e6e3d1016ded8f432bca468b3a2e3622bb34b8eb5a74e03c63bb9d24bda3e5f5fbd6cf197f0c7f22956ac5e6f5c7
 Homepage: https://github.com/HashVault/vltrig
 Description: vltrig miner - high performance RandomX CPU miner
 
