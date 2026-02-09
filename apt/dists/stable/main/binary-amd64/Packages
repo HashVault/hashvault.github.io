@@ -5,11 +5,11 @@ Priority: optional
 Section: utils
 Maintainer: HashVault <root@hashvault.pro>
 Filename: pool/main/vltrig-proxy_6.24.0.4_amd64.deb
-Size: 2788980
-MD5sum: 05c9c2d1119c832c36f4e1bdcdd7e902
-SHA1: 28f485aa431ccd6f4152d73a569000375a3bf1b1
-SHA256: aaac288be2bc7d913cbf44a72b7a224f3abd8cbdd762ac0da728ac56b841a944
-SHA512: 912dc8e244e73ca49b28bf8bc7c797c4678a34754a28e3d1fd6138436b6210273e5d07d952261d68676d8943e3526bed63a28bb1dbb1e4772ebabe6280523f3a
+Size: 2789002
+MD5sum: 4f0f5ba4db98c01cc187b304c6954ae8
+SHA1: 3be6d9635cdf0005ee5b3e1ddabe8fc6ce6f2df2
+SHA256: 7cd1728e9d8d4d4153a82722a38ef31d082eebf583a3aee0e01ee0ff6b08330c
+SHA512: 90f7101b5a8d9cf6a7beea2c4c7b8fca4b799089f3f690fac8f7b0d3b0bae43715266affb179bf53f072ecfe2a2e49a9c68b7d6d39f056b9887369ee32625e6e
 Homepage: https://github.com/HashVault/vltrig-proxy
 Description: vltrig-proxy - high performance Stratum mining proxy
 
