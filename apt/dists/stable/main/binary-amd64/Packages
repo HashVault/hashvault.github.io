@@ -15,16 +15,16 @@ Description: vltrig-proxy - high performance Stratum mining proxy
 
 Package: vltrig
 Architecture: amd64
-Version: 6.26.0.5
+Version: 6.26.0.6
 Priority: optional
 Section: utils
 Maintainer: HashVault <root@hashvault.pro>
-Filename: pool/main/vltrig_6.26.0.5_amd64.deb
-Size: 3207560
-MD5sum: c97e0b683b239e81849e1f10ff038706
-SHA1: e6089de81572702657a29e69676b545b7330c690
-SHA256: f4b2d460a2b224860cc92808c12aff97166978e8ca626d6d559e684e8355d226
-SHA512: ec12877f328946dcc5bd40127d46a342139a415a7f2196517932aed94d6cb5799c089544ea5893c4f1568842f3b4086ea30db91ef5574f9d588c50e809009ca6
+Filename: pool/main/vltrig_6.26.0.6_amd64.deb
+Size: 3198094
+MD5sum: d58e5fe7f8cb0b0a37e3fb33d75ad908
+SHA1: 088303ab6cf4e8b2fdba720415e1c948ebdf044a
+SHA256: 7d7108dffd184edb481f34d254ef5d31da4adbbbd82d3971c4d271d8b2ffe8bf
+SHA512: 3d0a62c985744e2e66d648b2da5247085e42c6dd315a61c9fc9afb273b8009b96fa6171412fc6e7f9242d2e6c2f9407814b7fb1eae25e0c58d4dfbe21674b795
 Homepage: https://github.com/HashVault/vltrig
 Description: vltrig miner - high performance RandomX CPU miner
 
